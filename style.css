@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("fonts/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("fonts/Montserrat-Black.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+html, body {
+	background: linear-gradient(90deg, #1f2932, #667d8e);
+}
+
+.home-background {
+	background-size: contain;
+	background-repeat: repeat-y;
+	background-image: url(svg/freecad_home_page_design_zigzag_pattern_repeat.svg);
+    padding: 64px;
+}
+
+.navbar-custom {
+    background-color: #404040;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    min-height: 55px;
+    padding: 5px 15px 5px;
+}
+
+.navbar .navbar-nav li a {
+	font-family: 'Montserrat-Bold', sans-serif;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 0.9em;
+    color: white;
+}
+
+/* change the color of active or hovered links */
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:hover .nav-link {
+    background-color: white;
+    color: black;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home-title {
+	font-family: 'Montserrat-Black', sans-serif;
+	font-size: 4.5em;
+	color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.home-subtitle {
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-size: 2.5em;
+	color: #FFFFFF;
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+a.btn.download {
+    padding: 0px;
+    margin-top: 32px;
+}
+
+a.btn.download > .main {
+    background-color: white;
+	font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1.2em;
+	color: #1f2932;
+    padding: 16px 32px 16px 32px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0px;
+    float: left;
+}
+
+a.btn.download > .opt {
+    background-color: #ff2f2f;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.2em;
+	color: white;
+    display: inline-block;
+    padding: 16px 16px 16px 16px;
+    border-radius: 0px;
+}
+
+.section-title {
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 2.5em;
+	color: #FFFFFF;
+}
+
+.section-paragraph {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 1.2em;
+	color: #FFFFFF;
+}
+
+.section-button {
+    width: 100%;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.2em;
+	color: #1f2932;
+    border-radius: 0px;
+    padding: 16px 32px 16px 32px;
+    background-color: white;
+}
+
+.screenshot {
+    box-shadow: 0 0 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background-color: #404040;
+}
+
+
+.filler {
+    flex-grow: 1;
+}
+
+
+
