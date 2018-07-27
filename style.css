@@ -193,5 +193,12 @@ a.btn.download > .opt {
     flex-grow: 1;
 }
 
+#floating-arrow{
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
