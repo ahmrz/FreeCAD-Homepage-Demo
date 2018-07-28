@@ -18,33 +18,17 @@
     src: url("fonts/Roboto-Regular.ttf");
 }
 
-/*@media (max-width: @screen-xs) {
-    body{font-size: 12px;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 14px;}
-}
-
-@media (max-width: @screen-md) {
-    body{font-size: 16px;}
-}
-
-@media (max-width: @screen-lg) {
-    body{font-size: 18px;}
-}*/
-
 html, body {
     height: 100%;
 	background: linear-gradient(90deg, #1f2932, #667d8e);
 	font-family: 'Roboto-Regular', sans-serif;
-    font-size: 1.6vmax;
+    font-size: calc(10px + 1vmax);
 }
 
-.home-background {
+#main {
 	background-size: contain;
 	background-repeat: repeat-y;
-	background-image: url(svg/freecad_home_page_design_zigzag_pattern_repeat_2.svg);
+	background-image: url(svg/pattern-repeat.svg);
     padding: 8vw;
 }
 
@@ -72,8 +56,7 @@ html, body {
 }
 
 /* change the color of active or hovered links */
-.navbar .nav-item.active .nav-link,
-.navbar .nav-item:hover .nav-link {
+.navbar .nav-item.active .nav-link, .navbar .nav-item:hover .nav-link {
     background-color: white;
     color: #404040;
 }
@@ -85,7 +68,6 @@ html, body {
 
 .section-cover {
     height: 100%;
-    /*padding-top: 6vmax;*/
     padding-bottom: 6vmax;
 }
 
@@ -142,6 +124,13 @@ a.btn.download > .opt {
     border-radius: 0px;
 }
 
+#floating-arrow{
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-title {
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 2em;
@@ -168,37 +157,25 @@ a.btn.download > .opt {
 }
 
 .footer-custom {
-    display: flex;
     align-items: center;
     background-color: #404040;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding: 6vw;
 }
 
-.footer-custom .footer-text {
+.footer-custom h6 {
     color: white;
-    font-family: Roboto-Regular;
+	font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 1em;
+}
+
+.footer-custom a, .footer-custom span {
+    color: white;
+	font-family: 'Roboto-Regular', sans-serif;
     font-size: 0.8em;
 }
 
-.footer-custom .img-fluid {
-    width: 3.5em;
-    height: 3.5em;
-    padding: 0.5em;
+.footer-links {
+    margin-bottom: 4vw;
 }
-
-.filler {
-    flex-grow: 1;
-}
-
-#floating-arrow{
-    width: 2vmin;
-    height: 2vmin;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 
