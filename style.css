@@ -153,7 +153,7 @@ a.btn.download > .opt {
 
 .screenshot {
     width: 100%;
-    box-shadow: 0 0 10px;
+    /*box-shadow: 0 0 10px;*/
 }
 
 .footer-custom {
