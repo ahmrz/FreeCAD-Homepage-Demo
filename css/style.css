@@ -77,6 +77,10 @@ html, body {
     padding-bottom: 6vmax;
 }
 
+.section-mobile {
+    margin-top: 20px;
+}
+
 .home-title {
 	font-family: 'Montserrat-Black', sans-serif;
 	font-size: 13vmin;
@@ -139,7 +143,7 @@ a.btn.download > .opt {
 
 .section-paragraph {
 	color: #FFFFFF;
-}   
+}
 
 .section-button {
     width: 100%;
@@ -178,4 +182,7 @@ a.btn.download > .opt {
     margin-bottom: 4vw;
 }
 
-
+.footer-custom ul {
+    list-style: none;
+    padding-left: 0;
+}
