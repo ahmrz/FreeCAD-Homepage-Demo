@@ -17,29 +17,67 @@
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
 		<a class="navbar-brand" href="#"><img src="svg/logo-freecad.svg"></a>
+
+		<div class="collapse navbar-collapse mr-auto" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Feature_list">Features</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Download">Downloads</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Getting_started">Documentation</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://forum.freecadweb.org/">Forum</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://github.com/FreeCAD/FreeCAD/">Contribute</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
+				<li class="nav-item"><a class="btn btn-default" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown ml-auto">
+			<a class="btn btn-default dropdown-toggle" href="#" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img src="lang/en/flag.jpg"/>
+			</a>
+
+			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item" href="/?lang=af"><img src="lang/af/flag.jpg"/>Afrikaans</a>
+				<a class="dropdown-item" href="/?lang=zh_CN"><img src="lang/zh_CN/flag.jpg"/>Chinese Simplified</a>
+				<a class="dropdown-item" href="/?lang=zh_TW"><img src="lang/zh_TW/flag.jpg"/>Chinese Traditional</a>
+				<a class="dropdown-item" href="/?lang=hr"><img src="lang/hr/flag.jpg"/>Croatian</a>
+				<a class="dropdown-item" href="/?lang=cs"><img src="lang/cs/flag.jpg"/>Czech</a>
+				<a class="dropdown-item" href="/?lang=nl"><img src="lang/nl/flag.jpg"/>Dutch</a>
+				<a class="dropdown-item" href="/"><img src="lang/en/flag.jpg"/>English</a>
+				<a class="dropdown-item" href="/?lang=fi"><img src="lang/fi/flag.jpg"/>Finnish</a>
+				<a class="dropdown-item" href="/?lang=fr"><img src="lang/fr/flag.jpg"/>French</a>
+				<a class="dropdown-item" href="/?lang=de"><img src="lang/de/flag.jpg"/>German</a>
+				<a class="dropdown-item" href="/?lang=hu"><img src="lang/hu/flag.jpg"/>Hungarian</a>
+				<a class="dropdown-item" href="/?lang=ja"><img src="lang/ja/flag.jpg"/>Japanese</a>
+				<a class="dropdown-item" href="/?lang=no"><img src="lang/no/flag.jpg"/>Norwegian</a>
+				<a class="dropdown-item" href="/?lang=pl"><img src="lang/pl/flag.jpg"/>Polish</a>
+				<a class="dropdown-item" href="/?lang=pt_PT"><img src="lang/pt_PT/flag.jpg"/>Portuguese</a>
+				<a class="dropdown-item" href="/?lang=ro"><img src="lang/ro/flag.jpg"/>Romanian</a>
+				<a class="dropdown-item" href="/?lang=ru"><img src="lang/ru/flag.jpg"/>Russian</a>
+				<a class="dropdown-item" href="/?lang=sr"><img src="lang/sr/flag.jpg"/>Serbian (Cyrillic)</a>
+				<a class="dropdown-item" href="/?lang=es_ES"><img src="lang/es_ES/flag.jpg"/>Spanish</a>
+				<a class="dropdown-item" href="/?lang=sv_SE"><img src="lang/sv_SE/flag.jpg"/>Swedish</a>
+				<a class="dropdown-item" href="/?lang=uk"><img src="lang/uk/flag.jpg"/>Ukrainian</a>
+				<a class="dropdown-item" href="/?lang=it"><img src="lang/it/flag.jpg"/>Italian</a>
+				<!-- <a class="dropdown-item" href="/?lang=pt_BR"><img src="lang/pt_BR/flag.jpg"/>Portuguese, Brazilian</a> -->
+				<a class="dropdown-item" href="/?lang=el"><img src="lang/el/flag.jpg"/>Greek</a>
+				<a class="dropdown-item" href="/?lang=sk"><img src="lang/sk/flag.jpg"/>Slovak</a>
+				<a class="dropdown-item" href="/?lang=tr"><img src="lang/tr/flag.jpg"/>Turkish</a>
+				<a class="dropdown-item" href="/?lang=sl"><img src="lang/sl/flag.jpg"/>Slovenian</a>
+			</div>
+		</div>
+
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse mr-auto" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Feature_list">Features</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Download">Downloads</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Getting_started">Wiki</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/">Community</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/FreeCAD/FreeCAD/">Contribute</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a></li>
-			</ul>
-		</div>
 	</nav>
 
 	<div id="main" class="container-fluid">
 		<div class="row section-cover vertical-align">
 			<div class="col-lg-7">
-				<h1 class="home-title">FREECAD</h1>
+				<h1 class="home-title">FreeCAD</h1>
 				<h2 class="home-subtitle">Your Own 3D Parametric Modeler</h2>
-				<a class="btn btn-default download" href="https://www.freecadweb.org/wiki/Download" role="button">
+				<a id="btn-download" class="btn btn-default" href="https://www.freecadweb.org/wiki/Download" role="button">
 					<div class="main">Download</div>
 					<div class="opt">0.17</div>
 				</a>
@@ -100,7 +138,7 @@
 
 		<div class="row section vertical-align">
 			<div class="col-lg-8">
-				<img class="img-fluid screenshot" src="images/screenshot-03-1.png" alt="Screenshot 3">
+				<img class="img-fluid screenshot" src="images/screenshot-03.jpg" alt="Screenshot 3">
 			</div>
 
 			<!-- This div appears only on desktop and larger screens -->
