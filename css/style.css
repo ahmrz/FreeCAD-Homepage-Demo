@@ -34,6 +34,7 @@
 }
 
 html, body {
+    width: 100%;
     height: 100%;
 	background: linear-gradient(90deg, #1f2932, #667d8e);
 	font-family: 'Roboto-Regular';
@@ -41,9 +42,10 @@ html, body {
 }
 
 #main {
-	background-size: contain;
+    background-image: url(../svg/pattern-repeat.svg);
 	background-repeat: repeat-y;
-	background-image: url(../svg/pattern-repeat.svg);
+	background-size: contain;
+    -webkit-background-size: contain;
     padding: 8vw;
 }
 
