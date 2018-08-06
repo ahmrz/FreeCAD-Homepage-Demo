@@ -45,8 +45,8 @@ html, body {
     background-image: url(../svg/pattern-repeat.svg);
 	background-repeat: repeat-y;
 	background-size: contain;
-    -webkit-background-size: contain;
     padding: 8vw;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .navbar-custom {
