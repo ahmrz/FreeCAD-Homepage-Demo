@@ -120,13 +120,15 @@ html, body {
 
 .section-cover {
     height: 100%;
-    padding-bottom: 6vmax;
+    /* Work-a-round for IE since it does not support vmax */
+    padding-bottom: calc(6 * (1vw + 1vh - 1vmin));
 }
 
 .section {
     height: 100%;
-    padding-top: 6vmax;
-    padding-bottom: 6vmax;
+    /* Work-a-round for IE since it does not support vmax */
+    padding-top: calc(6 * (1vw + 1vh - 1vmin));
+    padding-bottom: calc(6 * (1vw + 1vh - 1vmin));
 }
 
 .section-mobile {
