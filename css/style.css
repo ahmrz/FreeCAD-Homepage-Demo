@@ -24,13 +24,18 @@
 }
 
 @font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.woff") format('woff');
+}
+
+@font-face {
     font-family: "Roboto-Regular";
     src: url("../fonts/Roboto-Regular.woff") format('woff');
 }
 
 @font-face {
-    font-family: "Roboto-Light";
-    src: url("../fonts/Roboto-Light.woff") format('woff');
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.woff") format('woff');
 }
 
 html, body {
@@ -38,8 +43,13 @@ html, body {
     height: 100%;
 	background: linear-gradient(90deg, #1f2932, #667d8e);
 	font-family: 'Roboto-Regular', sans-serif;
+	
     /* Allow for font scaling (also supported in IE) */
     font-size: calc(1vw + 1vh - 1vmin + 9px);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #FFFFFF;
 }
 
 #main {
@@ -64,11 +74,12 @@ html, body {
     background-color: rgba(0, 0, 0, 0);
     color: #FFFFFF;
 	font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    border-radius: 5vh;
 }
 
 .navbar-brand {
-    padding: 0.4em;
+    /*padding: 0.4em;*/
 }
 
 /* change the color of active or hovered links */
@@ -78,7 +89,7 @@ html, body {
 }
 
 .btn-default {
-    border-radius: 0px;
+    border-radius: 5vh;
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 
@@ -88,6 +99,7 @@ html, body {
 
 .navbar .dropdown-toggle {
     background-color: rgba(0, 0, 0, 0);
+/*    border-radius: 5vm;*/
 }
 
 .navbar .dropdown-toggle:after {
@@ -238,4 +250,73 @@ html, body {
 .footer-custom ul {
     list-style: none;
     padding-left: 0;
+}
+
+.allign-text-center {
+	text-align: center;
+}
+
+.downloads-select-platform {
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.8em;
+	color: #FFFFFF;
+	margin-top: 1em;
+}
+
+.platform-select-text {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 0.8em;
+}
+
+.platform-icon {
+	width: 100%;
+	padding: 1.5vw;
+}
+
+.platform-card {
+	background-color: #FFFFFF;
+	border-radius: 1.5em;
+	padding: 1.8em;
+	margin: 1.8em;
+	text-align: center;
+}
+
+.platform-name {
+	color: 1F2932;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.1em;
+}
+
+.platform-download-btn {
+	border-radius: 0.8em;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 0.8em;
+	color: #FFFFFF;
+	margin-top: 0.4em;
+}
+
+.btn-red {
+	background-color: #FF2A2A;
+}
+
+.btn-green {
+	background-color: #00d529;
+}
+
+.download-notes h6 {
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 1.1em;
+	margin-top: 7vh;
+}
+
+.download-notes ul,
+.download-notes p {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+.download-notes p a {
+	font-family: 'Roboto-Bold', sans-serif;
+	color: #FFFFFF;
 }
