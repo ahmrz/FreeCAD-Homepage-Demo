@@ -17,54 +17,55 @@
 
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
-		<a class="navbar-brand" href="#"><img src="svg/logo-freecad.svg"></a>
 
-		<div class="collapse navbar-collapse mr-auto" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Feature_list">Features</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="downloads.html">Downloads</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Getting_started">Documentation</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="https://forum.freecadweb.org/">Forum</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="https://github.com/FreeCAD/FreeCAD/">Contribute</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
-				<li class="nav-item"><a class="btn btn-default" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a></li>
+		<a class="navbar-brand" href="index.html">
+			<img class="img-fluid" src="svg/logo-freecad.svg">
+		</a>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="nav nav-pills ml-auto">
+				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Feature_list">Features</a></li>
+				<li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Getting_started">Documentation</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/">Forum</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/FreeCAD/FreeCAD/">Contribute</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a></li>
+				<li class="nav-item dropdown ml-auto">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						<img src="lang/en/flag.jpg"/>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="/?lang=af"><img src="lang/af/flag.jpg"/>Afrikaans</a>
+						<a class="dropdown-item" href="/?lang=zh_CN"><img src="lang/zh_CN/flag.jpg"/>Chinese Simplified</a>
+						<a class="dropdown-item" href="/?lang=zh_TW"><img src="lang/zh_TW/flag.jpg"/>Chinese Traditional</a>
+						<a class="dropdown-item" href="/?lang=hr"><img src="lang/hr/flag.jpg"/>Croatian</a>
+						<a class="dropdown-item" href="/?lang=cs"><img src="lang/cs/flag.jpg"/>Czech</a>
+						<a class="dropdown-item" href="/?lang=nl"><img src="lang/nl/flag.jpg"/>Dutch</a>
+						<a class="dropdown-item" href="/"><img src="lang/en/flag.jpg"/>English</a>
+						<a class="dropdown-item" href="/?lang=fi"><img src="lang/fi/flag.jpg"/>Finnish</a>
+						<a class="dropdown-item" href="/?lang=fr"><img src="lang/fr/flag.jpg"/>French</a>
+						<a class="dropdown-item" href="/?lang=de"><img src="lang/de/flag.jpg"/>German</a>
+						<a class="dropdown-item" href="/?lang=hu"><img src="lang/hu/flag.jpg"/>Hungarian</a>
+						<a class="dropdown-item" href="/?lang=ja"><img src="lang/ja/flag.jpg"/>Japanese</a>
+						<a class="dropdown-item" href="/?lang=no"><img src="lang/no/flag.jpg"/>Norwegian</a>
+						<a class="dropdown-item" href="/?lang=pl"><img src="lang/pl/flag.jpg"/>Polish</a>
+						<a class="dropdown-item" href="/?lang=pt_PT"><img src="lang/pt_PT/flag.jpg"/>Portuguese</a>
+						<a class="dropdown-item" href="/?lang=ro"><img src="lang/ro/flag.jpg"/>Romanian</a>
+						<a class="dropdown-item" href="/?lang=ru"><img src="lang/ru/flag.jpg"/>Russian</a>
+						<a class="dropdown-item" href="/?lang=sr"><img src="lang/sr/flag.jpg"/>Serbian (Cyrillic)</a>
+						<a class="dropdown-item" href="/?lang=es_ES"><img src="lang/es_ES/flag.jpg"/>Spanish</a>
+						<a class="dropdown-item" href="/?lang=sv_SE"><img src="lang/sv_SE/flag.jpg"/>Swedish</a>
+						<a class="dropdown-item" href="/?lang=uk"><img src="lang/uk/flag.jpg"/>Ukrainian</a>
+						<a class="dropdown-item" href="/?lang=it"><img src="lang/it/flag.jpg"/>Italian</a>
+						<!-- <a class="dropdown-item" href="/?lang=pt_BR"><img src="lang/pt_BR/flag.jpg"/>Portuguese, Brazilian</a> -->
+						<a class="dropdown-item" href="/?lang=el"><img src="lang/el/flag.jpg"/>Greek</a>
+						<a class="dropdown-item" href="/?lang=sk"><img src="lang/sk/flag.jpg"/>Slovak</a>
+						<a class="dropdown-item" href="/?lang=tr"><img src="lang/tr/flag.jpg"/>Turkish</a>
+						<a class="dropdown-item" href="/?lang=sl"><img src="lang/sl/flag.jpg"/>Slovenian</a>
+					</div>
+				</li>
 			</ul>
-		</div>
-
-		<div class="dropdown ml-auto">
-			<a class="btn btn-default dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<img src="lang/en/flag.jpg"/>
-			</a>
-
-			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="/?lang=af"><img src="lang/af/flag.jpg"/>Afrikaans</a>
-				<a class="dropdown-item" href="/?lang=zh_CN"><img src="lang/zh_CN/flag.jpg"/>Chinese Simplified</a>
-				<a class="dropdown-item" href="/?lang=zh_TW"><img src="lang/zh_TW/flag.jpg"/>Chinese Traditional</a>
-				<a class="dropdown-item" href="/?lang=hr"><img src="lang/hr/flag.jpg"/>Croatian</a>
-				<a class="dropdown-item" href="/?lang=cs"><img src="lang/cs/flag.jpg"/>Czech</a>
-				<a class="dropdown-item" href="/?lang=nl"><img src="lang/nl/flag.jpg"/>Dutch</a>
-				<a class="dropdown-item" href="/"><img src="lang/en/flag.jpg"/>English</a>
-				<a class="dropdown-item" href="/?lang=fi"><img src="lang/fi/flag.jpg"/>Finnish</a>
-				<a class="dropdown-item" href="/?lang=fr"><img src="lang/fr/flag.jpg"/>French</a>
-				<a class="dropdown-item" href="/?lang=de"><img src="lang/de/flag.jpg"/>German</a>
-				<a class="dropdown-item" href="/?lang=hu"><img src="lang/hu/flag.jpg"/>Hungarian</a>
-				<a class="dropdown-item" href="/?lang=ja"><img src="lang/ja/flag.jpg"/>Japanese</a>
-				<a class="dropdown-item" href="/?lang=no"><img src="lang/no/flag.jpg"/>Norwegian</a>
-				<a class="dropdown-item" href="/?lang=pl"><img src="lang/pl/flag.jpg"/>Polish</a>
-				<a class="dropdown-item" href="/?lang=pt_PT"><img src="lang/pt_PT/flag.jpg"/>Portuguese</a>
-				<a class="dropdown-item" href="/?lang=ro"><img src="lang/ro/flag.jpg"/>Romanian</a>
-				<a class="dropdown-item" href="/?lang=ru"><img src="lang/ru/flag.jpg"/>Russian</a>
-				<a class="dropdown-item" href="/?lang=sr"><img src="lang/sr/flag.jpg"/>Serbian (Cyrillic)</a>
-				<a class="dropdown-item" href="/?lang=es_ES"><img src="lang/es_ES/flag.jpg"/>Spanish</a>
-				<a class="dropdown-item" href="/?lang=sv_SE"><img src="lang/sv_SE/flag.jpg"/>Swedish</a>
-				<a class="dropdown-item" href="/?lang=uk"><img src="lang/uk/flag.jpg"/>Ukrainian</a>
-				<a class="dropdown-item" href="/?lang=it"><img src="lang/it/flag.jpg"/>Italian</a>
-				<!-- <a class="dropdown-item" href="/?lang=pt_BR"><img src="lang/pt_BR/flag.jpg"/>Portuguese, Brazilian</a> -->
-				<a class="dropdown-item" href="/?lang=el"><img src="lang/el/flag.jpg"/>Greek</a>
-				<a class="dropdown-item" href="/?lang=sk"><img src="lang/sk/flag.jpg"/>Slovak</a>
-				<a class="dropdown-item" href="/?lang=tr"><img src="lang/tr/flag.jpg"/>Turkish</a>
-				<a class="dropdown-item" href="/?lang=sl"><img src="lang/sl/flag.jpg"/>Slovenian</a>
-			</div>
 		</div>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,9 +79,9 @@
 			<div class="col-lg-7">
 				<h1 class="home-title">FreeCAD</h1>
 				<h2 class="home-subtitle">Your Own 3D Parametric Modeler</h2>
-				<a id="btn-download" class="btn btn-default" href="https://www.freecadweb.org/wiki/Download" role="button">
-					<div class="main">Download</div>
-					<div class="opt">0.17</div>
+				<a class="btn btn-default btn-download" role="button" href="downloads.html">
+					<div class="btn-download-left">Download</div>
+					<div class="btn-download-right">0.17</div>
 				</a>
 				<a id="btn-features" href="https://www.youtube.com/watch?v=7iLOaL9z59k">See what's new</a>
 			</div>
@@ -94,8 +95,8 @@
 			</div>
 		</div>
 
-		<div id="section_first" class="row section vertical-align">
-			<div class="col-lg-8">
+		<div id="section_first" class="row justify-content-around section vertical-align">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-01.jpg" alt="Screenshot 1">
 			</div>
 
@@ -116,7 +117,7 @@
 			</div>
 		</div>
 
-		<div class="row section vertical-align">
+		<div class="row justify-content-around section vertical-align">
 			<!-- This div appears only on desktop and larger screens -->
 			<div class="col-lg-4 d-none d-lg-block">
 				<h3 class="section-title">Create 3D from 2D & back</h3>
@@ -125,7 +126,7 @@
 				</p>
 			</div>
 
-			<div class="col-lg-8">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-02.jpg" alt="Screenshot 2">
 			</div>
 
@@ -138,8 +139,8 @@
 			</div>
 		</div>
 
-		<div class="row section vertical-align">
-			<div class="col-lg-8">
+		<div class="row justify-content-around section vertical-align">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-03.jpg" alt="Screenshot 3">
 			</div>
 
@@ -160,7 +161,7 @@
 			</div>
 		</div>
 
-		<div class="row section vertical-align">
+		<div class="row justify-content-around section vertical-align">
 			<!-- This div appears only on desktop and larger screens -->
 			<div class="col-lg-4 d-none d-lg-block">
 				<h3 class="section-title">Designed for your needs</h3>
@@ -169,7 +170,7 @@
 				</p>
 			</div>
 
-			<div class="col-lg-8">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-04.jpg" alt="Screenshot 4">
 			</div>
 
@@ -182,8 +183,8 @@
 			</div>
 		</div>
 
-		<div class="row section vertical-align">
-			<div class="col-lg-8">
+		<div class="row justify-content-around section vertical-align">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-05.jpg" alt="Screenshot 5">
 			</div>
 
@@ -206,7 +207,7 @@
 			</div>
 		</div>
 
-		<div class="row section vertical-align">
+		<div class="row justify-content-around section vertical-align">
 			<!-- This div appears only on desktop and larger screens -->
 			<div class="col-lg-4 d-none d-lg-block">
 				<h3 class="section-title">Want to contribute to FreeCAD?</h3>
@@ -216,7 +217,7 @@
 				<a class="btn btn-default btn-lg section-button" role="button" href="https://github.com/FreeCAD/FreeCAD/">Get involved</a>
 			</div>
 
-			<div class="col-lg-8">
+			<div class="col-lg-7">
 				<img class="img-fluid screenshot" src="images/screenshot-06.jpg" alt="Screenshot 6">
 			</div>
 
@@ -271,7 +272,7 @@
 		</div>
 
 		<span>
-			© The FreeCAD Team, 2018. Image Credits (Top to bottom): ppemawm, r-frank, epileftric, regis, rider_mortagnais, bejant. Homepage design by AR795.
+			© The FreeCAD Team. Homepage Image Credits (Top to bottom): ppemawm, r-frank, epileftric, regis, rider_mortagnais, bejant. Homepage design by AR795.
 		</span>
 	</footer>
 
