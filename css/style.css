@@ -71,7 +71,7 @@ p, span, ul, ol, a {
 
 #main {
 	padding: 8vw;
-	background-image: url(../svg/pattern-background.png);
+	background-image: url(../svg/pattern-background.svg);
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	/* Fix jittery scroll in chrome */
