@@ -33,9 +33,11 @@
 	src: url("../fonts/Roboto-Bold.woff") format('woff');
 }
 
+/*
 html {
 	font-size: 100%
 }
+*/
 
 body {
 	/* Allow for font scaling (also supported in IE) */
@@ -69,7 +71,7 @@ p, span, ul, ol, a {
 
 #main {
 	padding: 8vw;
-	background-image: url(../svg/pattern-repeat-with-background.png);
+	background-image: url(../svg/pattern-background.png);
 	background-repeat: repeat-y;
 	background-size: 100% auto;
 	/* Fix jittery scroll in chrome */
@@ -324,7 +326,7 @@ p, span, ul, ol, a {
 .platform-download-btn {
 	border-radius: 0.8em;
 	font-family: 'Roboto-Bold', sans-serif;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: #FFFFFF;
 	background-color:#FF2A2A;
 	margin-top: 0.3em;
@@ -333,7 +335,7 @@ p, span, ul, ol, a {
 
 .platform-download-btn:hover, .platform-download-btn:focus {
 	color: #FFFFFF;
-	background-color: #007bd0;
+	background-color: #1F2932;
 }
 
 .download-notes h6 {
