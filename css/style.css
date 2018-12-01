@@ -24,11 +24,6 @@
 }
 
 @font-face {
-	font-family: "Roboto-Light";
-	src: url("../fonts/Roboto-Light.woff") format('woff');
-}
-
-@font-face {
 	font-family: "Roboto-Regular";
 	src: url("../fonts/Roboto-Regular.woff") format('woff');
 }
@@ -38,13 +33,14 @@
 	src: url("../fonts/Roboto-Bold.woff") format('woff');
 }
 
-html, body {
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, #1F2932, #667D8E);
-	font-family: 'Roboto-Regular', sans-serif;
+html {
+	font-size: 100%
+}
+
+body {
 	/* Allow for font scaling (also supported in IE) */
-	font-size: calc(1vw + 1vh - 1vmin + 9px);
+	font-size: calc(1vw + 1vh - 1vmin + 12px);
+	font-family: 'Roboto-Regular', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, span, ul, ol, a {
@@ -59,13 +55,25 @@ p, span, ul, ol, a {
 	font-family: 'Roboto-Regular', sans-serif;
 }
 
+.small {
+	font-size: 11px;
+}
+
+.medium {
+	font-size: 14px;
+}
+
+.big {
+	font-size: 18px;
+}
+
 #main {
-	background-image: url(../svg/pattern-repeat.svg);
-	background-repeat: repeat-y;
-	background-size: contain;
 	padding: 8vw;
+	background-image: url(../svg/pattern-repeat-with-background.png);
+	background-repeat: repeat-y;
+	background-size: 100% auto;
 	/* Fix jittery scroll in chrome */
-	-webkit-transform: translate3d(0,0,0);
+	/*-webkit-transform: translate3d(0,0,0);*/
 }
 
 .navbar-custom {
@@ -112,10 +120,6 @@ p, span, ul, ol, a {
 	color: #404040;
 }
 
-.navbar .dropdown-toggle {
-	background-color: rgba(0, 0, 0, 0);
-}
-
 .navbar .dropdown-toggle:after {
 	content: none;
 }
@@ -127,7 +131,6 @@ p, span, ul, ol, a {
 
 .navbar .dropdown-menu a {
 	color: #404040;
-	font-size: 0.7em;
 }
 
 .navbar .dropdown-menu a img {
