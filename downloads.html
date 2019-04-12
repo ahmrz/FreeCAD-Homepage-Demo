@@ -1,363 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<meta name="description" content="FreeCAD, the open source parametric modeler">
-	<meta name="keywords" content="FreeCAD, Open Source, Parametric Modeler, CAD">
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width = device-width, initial-scale = 1"/>
+	<meta name="description" content="FreeCAD, the open source parametric modeler"/>
+  <meta name="keywords" content="freecad, engineering, open-source, opencascade, architecture, cad, bim, fem, 3d, 3d-printing, mac-osx, linux, windows, coin, parametric-modeler"/>
 
-	<title>FreeCAD: Select Your Platform</title>
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<title>FreeCAD: Select your platform</title>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
 
 	<!-- Include bootstrap CSS file -->
-	<link rel="stylesheet" href="css/bootstrap-4.1.2.min.css">
+	<link rel="stylesheet" href="css/bootstrap-4.3.1.min.css"/>
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+	<nav class="navbar fixed-top navbar-expand-xl navbar-dark py-1 navbar-custom">
+    <a class="navbar-brand" href="index.html">
+      <img class="img-fluid" src="svg/logo-freecad.svg" alt="FreeCAD Logo"/>
+    </a>
 
-		<a class="navbar-brand" href="index.html">
-			<img class="img-fluid" src="svg/logo-freecad.svg">
-		</a>
+    <ul class="nav nav-pills ml-auto order-xl-last">
+      <li class="nav-item dropdown">
+        <a class="nav-link text-light rounded-pill dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="lang/en/flag.jpg"/>
+        </a>
 
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="nav nav-pills ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.freecadweb.org/wiki/Feature_list">
-						Features
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="downloads.html">
-						Downloads
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.freecadweb.org/wiki/Getting_started">
-						Documentation
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://forum.freecadweb.org/">
-						Forum
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://github.com/FreeCAD/FreeCAD/">
-						Contribute
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.freecadweb.org/wiki/Donate">
-						Donate
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://forum.freecadweb.org/viewforum.php?f=24">
-						Showcase
-					</a>
-				</li>
-				<li class="nav-item dropdown ml-auto">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
-					role="button" aria-haspopup="true" aria-expanded="false">
-						<img src="lang/en/flag.jpg"/>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="/?lang=af"><img src="lang/af/flag.jpg"/>
-							Afrikaans
-						</a>
-						<a class="dropdown-item" href="/?lang=zh_CN"><img src="lang/zh_CN/flag.jpg"/>
-							Chinese Simplified
-						</a>
-						<a class="dropdown-item" href="/?lang=zh_TW"><img src="lang/zh_TW/flag.jpg"/>
-							Chinese Traditional
-						</a>
-						<a class="dropdown-item" href="/?lang=hr"><img src="lang/hr/flag.jpg"/>
-							Croatian
-						</a>
-						<a class="dropdown-item" href="/?lang=cs"><img src="lang/cs/flag.jpg"/>
-							Czech
-						</a>
-						<a class="dropdown-item" href="/?lang=nl"><img src="lang/nl/flag.jpg"/>
-							Dutch
-						</a>
-						<a class="dropdown-item" href="/"><img src="lang/en/flag.jpg"/>
-							English
-						</a>
-						<a class="dropdown-item" href="/?lang=fi"><img src="lang/fi/flag.jpg"/>
-							Finnish
-						</a>
-						<a class="dropdown-item" href="/?lang=fr"><img src="lang/fr/flag.jpg"/>
-							French
-						</a>
-						<a class="dropdown-item" href="/?lang=de"><img src="lang/de/flag.jpg"/>
-							German
-						</a>
-						<a class="dropdown-item" href="/?lang=hu"><img src="lang/hu/flag.jpg"/>
-							Hungarian
-						</a>
-						<a class="dropdown-item" href="/?lang=ja"><img src="lang/ja/flag.jpg"/>
-							Japanese
-						</a>
-						<a class="dropdown-item" href="/?lang=no"><img src="lang/no/flag.jpg"/>
-							Norwegian
-						</a>
-						<a class="dropdown-item" href="/?lang=pl"><img src="lang/pl/flag.jpg"/>
-							Polish
-						</a>
-						<a class="dropdown-item" href="/?lang=pt_PT"><img src="lang/pt_PT/flag.jpg"/>
-							Portuguese
-						</a>
-						<a class="dropdown-item" href="/?lang=ro"><img src="lang/ro/flag.jpg"/>
-							Romanian
-						</a>
-						<a class="dropdown-item" href="/?lang=ru"><img src="lang/ru/flag.jpg"/>
-							Russian
-						</a>
-						<a class="dropdown-item" href="/?lang=sr"><img src="lang/sr/flag.jpg"/>
-							Serbian (Cyrillic)
-						</a>
-						<a class="dropdown-item" href="/?lang=es_ES"><img src="lang/es_ES/flag.jpg"/>
-							Spanish
-						</a>
-						<a class="dropdown-item" href="/?lang=sv_SE"><img src="lang/sv_SE/flag.jpg"/>
-							Swedish
-						</a>
-						<a class="dropdown-item" href="/?lang=uk"><img src="lang/uk/flag.jpg"/>
-							Ukrainian
-						</a>
-						<a class="dropdown-item" href="/?lang=it"><img src="lang/it/flag.jpg"/>
-							Italian
-						</a>
-						<!-- <a class="dropdown-item" href="/?lang=pt_BR"><img src="lang/pt_BR/flag.jpg"/>
-							Portuguese, Brazilian
-						</a> -->
-						<a class="dropdown-item" href="/?lang=el"><img src="lang/el/flag.jpg"/>
-							Greek
-						</a>
-						<a class="dropdown-item" href="/?lang=sk"><img src="lang/sk/flag.jpg"/>
-							Slovak
-						</a>
-						<a class="dropdown-item" href="/?lang=tr"><img src="lang/tr/flag.jpg"/>
-							Turkish
-						</a>
-						<a class="dropdown-item" href="/?lang=sl"><img src="lang/sl/flag.jpg"/>
-							Slovenian
-						</a>
-					</div>
-				</li>
-			</ul>
-		</div>
+        <div class="dropdown-lang dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/af/flag.jpg"/>Afrikaans</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/zh_CN/flag.jpg"/>Chinese Simplified</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/zh_TW/flag.jpg"/>Chinese Traditional</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/hr/flag.jpg"/>Croatian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/cs/flag.jpg"/>Czech</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/nl/flag.jpg"/>Dutch</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/en/flag.jpg"/>English</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/fi/flag.jpg"/>Finnish</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/fr/flag.jpg"/>French</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/de/flag.jpg"/>German</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/hu/flag.jpg"/>Hungarian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/ja/flag.jpg"/>Japanese</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/no/flag.jpg"/>Norwegian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/pl/flag.jpg"/>Polish</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/pt_PT/flag.jpg"/>Portuguese</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/ro/flag.jpg"/>Romanian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/ru/flag.jpg"/>Russian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/sr/flag.jpg"/>Serbian (Cyrillic)</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/es_ES/flag.jpg"/>Spanish</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/sv_SE/flag.jpg"/>Swedish</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/uk/flag.jpg"/>Ukrainian</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/it/flag.jpg"/>Italian</a>
+          <!-- <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/pt_BR/flag.jpg"/>Portuguese, Brazilian</a> -->
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/el/flag.jpg"/>Greek</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/sk/flag.jpg"/>Slovak</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/tr/flag.jpg"/>Turkish</a>
+          <a class="dropdown-item text-dark" href="#"><img class="mr-3" src="lang/sl/flag.jpg"/>Slovenian</a>
+        </div>
+      </li>
+    </ul>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" 
-		data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-		aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-	</nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills ml-auto">
+        <li class="nav-item">
+          <a class="nav-link my-2 rounded-pill" href="https://www.freecadweb.org/wiki/Feature_list">Features</a>
+        </li>
+
+        <li class="nav-item nav-item-active">
+          <a class="nav-link active my-2 rounded-pill" href="downloads.html">Downloads</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link my-2 rounded-pill" href="https://www.freecadweb.org/wiki/Getting_started">Documentation</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link my-2 rounded-pill dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Community</a>
+
+          <div class="dropdown-community dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item text-dark font-weight-bold" href="https://forum.freecadweb.org/">Forum</a>
+            <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD">GitHub</a>
+            <a class="dropdown-item text-dark" href="https://fosstodon.org/@FreeCAD">Mastodon</a>
+            <a class="dropdown-item text-dark" href="https://riot.im/app/#/room/#gitter_FreeCAD=2FFreeCAD:matrix.org">Matrix</a>
+            <a class="dropdown-item text-dark" href="irc://chat.freenode.net/freecad">IRC</a>
+            <a class="dropdown-item text-dark" href="https://gitter.im/FreeCAD/FreeCAD">Gitter.im</a>
+            <a class="dropdown-item text-dark" href="https://www.reddit.com/r/freecad">Reddit</a>
+            <a class="dropdown-item text-dark" href="https://twitter.com/FreeCADNews">Twitter</a>
+            <a class="dropdown-item text-dark" href="https://www.facebook.com/FreeCAD">Facebook</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link my-2 rounded-pill dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contribute</a>
+
+          <div class="dropdown-community dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD">GitHub</a>
+            <a class="dropdown-item text-dark" href="http://www.freecadweb.org/wiki/">Wiki</a>
+            <a class="dropdown-item text-dark" href="http://www.freecadweb.org/tracker/">Bug Tracker</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link my-2 rounded-pill" href="https://www.freecadweb.org/wiki/Donate">Donate</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link my-2 rounded-pill" href="https://forum.freecadweb.org/viewforum.php?f=24">Showcase</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 	<div id="main" class="container-fluid">
-		<div class="allign-text-center">
-			<h2 class="downloads-select-platform">Current stable version: 0.17</h2>
-			<p class="platform-select-text">Select your desired platform</p>
-		</div>
-		
-		<div class="row justify-content-around">
+		<div class="download-notes text-center">
+			<h2 class="downloads-notes-title">Current stable version: 0.17</h2>
+			<p>
+        Please note that FreeCAD has still not reached a version 1.0 status in our view, and 
+        might not be ready for production use. Nevertheless multitudes of users use it. To 
+        find out if FreeCAD is appropriate for your project, please check out the 
+        <a href="https://forum.freecadweb.org/" class="badge badge-light">FreeCAD forum</a>
+        . To find out what's new, see the 
+        <a href="https://www.freecadweb.org/wiki/Release_notes_0.17" class="badge badge-light">release notes</a>
+        . You will find SHA256 checksums (to verify integrity of your download) and Windows 
+        portable versions on the 
+        <a href="https://github.com/FreeCAD/FreeCAD/releases/tag/0.17" class="badge badge-light">0.17 Release page on GitHub</a>
+        . (Older portable builds have been pruned. Availability will return in the future) 
+      </p>
+    </div>
 
-			<div class="col-lg-3 col-sm-4 platform-card">
-				<img class="img-fluid platform-icon w-100" src="svg/icon-windows.svg" 
-				alt="Windows Downloads">
+    <div class="card-columns my-5">
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Windows</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Download the Windows installer for FreeCAD. For more info on installation, click 
+            <a href="https://www.freecadweb.org/wiki/Install_on_Windows">here</a>.
+          </p>
+          <div class="flex-column flex-lg-row">
+            <a class="btn btn-primary rounded-pill my-2" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13528.5c3f7bf-WIN-x86-installer.exe">32-Bit</a>
+            <a class="btn btn-primary rounded-pill my-2" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4-WIN-x64-installer.exe">64-Bit</a>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            The 32-Bit installer (x86) and 64-Bit installer (x64) supports 
+            the following versions of Windows: 7/8/10.
+          </small>
+        </div>
+      </div>
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Mac</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Download the Mac installer for FreeCAD. For more info on installation, click <a href="https://www.freecadweb.org/wiki/Install_on_Mac">here</a>.
+          </p>
+          <a class="btn btn-primary rounded-pill my-2" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD_0.17-13541.9948ee4-OSX-x86_64-Qt5.dmg">
+            64-Bit
+          </a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            Mac OS X 10.11 El Capitan is the minimum supported version.
+          </small>
+        </div>
+      </div>
+      
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Fedora</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            FreeCAD has been included in the official Fedora packages since Fedora 20. It can be 
+            installed from the command line with:
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">sudo dnf install freecad</code>
+          </div>
+        </div>
+      </div>
 
-				<span class="platform-name">Windows</span>
-				
-				<div class="btn-group w-100" role="group" aria-label="platform-type">
-					<a class="btn btn-default w-100 platform-download-btn border-right" 
-					role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13528.5c3f7bf-WIN-x86-installer.exe">
-						32-Bit
-					</a>
-					<a class="btn btn-default w-100 platform-download-btn border-left" 
-					role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4-WIN-x64-installer.exe">
-						64-Bit
-					</a>
-				</div>
-			</div>
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Ubuntu</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            FreeCAD is available from the Ubuntu repositories and can be installed with this command in a terminal:
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">sudo apt install freecad</code>
+          </div>
+          <p>
+              But chances are this stable version will be outdated, and not have the latest features. 
+              To get the last release version, please use the PPA:
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">sudo add-apt-repository ppa:freecad-maintainers/freecad-stable</code>
+          </div>
+          <p>
+            Synchronize the list of available packages with the servers:
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">sudo apt update</code>
+          </div>
+          <p>
+            Then, install FreeCAD along with the documentation:
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">sudo apt install freecad freecad-doc && sudo apt upgrade</code>
+          </div>
+        </div>
+      </div>
 
-			<div class="col-lg-3 col-sm-4 platform-card">
-				<img class="img-fluid platform-icon w-100" src="svg/icon-apple.svg" 
-				alt="Mac Downloads">
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">OpenSUSE</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            FreeCAD is typically installed with: 
+          </p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">zypper install FreeCAD</code>
+          </div>
+        </div>
+      </div>
 
-				<span class="platform-name">Mac</span>
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">AppImage</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            FreeCAD can be installed from most Linux distributions official repositories, but 
+            the version they provide might be quite dated and be missing many features. Instead 
+            you can download the linked AppImage below, mark it as executable and launch it without 
+            installation. </p>
+          <a class="btn btn-primary rounded-pill my-2" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage">
+            64-Bit
+          </a>
+        </div>
+      </div>
 
-				<a class="btn btn-default w-100 platform-download-btn btn-red" 
-				role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD_0.17-13541.9948ee4-OSX-x86_64-Qt5.dmg">
-					64-Bit
-				</a>
-			</div>
-			
-			<div class="col-lg-3 col-sm-4 platform-card">
-				<img class="img-fluid platform-icon w-100" src="svg/icon-linux.svg" 
-				alt="Linux Downloads">
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Snap</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Install using the command line:</p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">snap install freecad</code>
+          </div>
+        </div>
+      </div>
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Flatpak</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Install using the command line:</p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">flatpak install org.freecadweb.FreeCAD</code>
+          </div>
+        </div>
+      </div>
 
-				<span class="platform-name">Linux</span>
-				
-				<a class="btn btn-default w-100 platform-download-btn btn-red" role="button" 
-				href="https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage">
-					64-Bit AppImage
-				</a>
-			</div>
+      <div class="card text-dark">
+        <div class="card-header">
+          <h3 class="download-platform-name">Gentoo</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text">FreeCAD can be built/installed simply by issuing:</p>
+          <div class="alert alert-secondary" role="alert">
+            <code class="text-dark">emerge freecad</code>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		</div>
-		
-		<div class="download-notes">
-			<h6>Notes</h6>
-			<p>Please note that FreeCAD has still not reached a version 1.0 status in our view, and 
-				might not be ready for production use. Nevertheless multitudes of users use it. To 
-				find out if FreeCAD is appropriate for your project, please check out the 
-				<a href="https://forum.freecadweb.org/">FreeCAD forum</a>.
-			</p>
-			<p>The first 0.17 release of FreeCAD (0.17.13509) was published 
-				on 2018-04-06. Many bug fix releases have been published since then, the latest bug fix 
-				release 0.17.13541 was published on 2018-08-16. It might not be available to all 
-				operating systems at this time. To find out what's new, see the 
-				<a href="https://www.freecadweb.org/wiki/Release_notes_0.17">release notes</a>.
-			</p>
-			<p>You will find SHA256 checksums (to verify integrity of your download) and Windows 
-				portable versions on the <a href="https://github.com/FreeCAD/FreeCAD/releases/tag/0.17">
-				0.17 Release page on GitHub</a>. (Older portable builds have been pruned. Availability 
-				will return in the future) 
-			</p>
+    <div class="download-notes text-center">
+      <h2 class="downloads-notes-title">Development versions</h2>
+      <p>
+        FreeCAD's development is always active! Do you want to check out the latest development 
+        release? For MacOS, Windows, Linux (AppImage) and source code, see the  
+        <a href="https://github.com/FreeCAD/FreeCAD/releases" class="badge badge-light">FreeCAD releases</a>
+        page.
+      </p>
+    </div>
 
-			<h6>Notes for Windows users</h6>
-			<ul>
-				<li>The 32-Bit installer (x86) supports the following versions of Windows: 7/8/10.</li>
-				<li>The 64-Bit installer (x64) supports the following versions of Windows: 7/8/10.</li>
-			</ul>
-			
-			<h6>Notes for Mac OS X users</h6>
-			<p>Mac OS X 10.11 El Capitan is the minimum supported version.</p>
-			
-			<h6>Notes for GNU/Linux users</h6>
-			<p>FreeCAD can be installed from most Linux distributions official repositories, but 
-			the version they provide might be quite dated and be missing many features. Instead 
-			you can download the linked AppImage above, mark it as executable and launch it without 
-			installation. Please see the <a href="https://www.freecadweb.org/wiki/Install_on_Unix">
-			Install on Unix</a> page for more installation options, including how to get up-to-date 
-			packages for Ubuntu and derivatives.</p>					
-			
-			<h6>Development Versions</h6>
-			<p>FreeCAD's development is always active! Do you want to check out the 0.18 development 
-			release? For MacOS, Windows, Linux (AppImage) and source code, see the 
-			<a href="https://github.com/FreeCAD/FreeCAD/releases">FreeCAD releases</a> page.</p>			
-			
-			<h6>Additional Modules and Macros</h6>
-			<p>The FreeCAD community provides a wealth of additional modules and macros. They can 
-			now easily be installed directly from within FreeCAD using the 
-			<a href="https://www.freecadweb.org/wiki/AddonManager">Addon manager</a>.</p>
-		</div>
-		
+    <div class="download-notes text-center">
+      <h2 class="downloads-notes-title">Additional modules and macros</h2>
+      <p>
+        The FreeCAD community provides a wealth of additional modules and macros. They can 
+        now easily be installed directly from within FreeCAD using the   
+        <a href="https://www.freecadweb.org/wiki/AddonManager" class="badge badge-light">Addon manager</a>
+        .
+      </p>
+    </div>
 	</div>
 
-	<footer class="container-fluid footer-custom">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 footer-links">
-					<h6>Community</h6>
-					<ul>
-						<li>
-							<a href="https://github.com/FreeCAD/FreeCAD">
-								Github
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/FreeCAD">
-								Facebook
-							</a>
-						</li>
-						<li>
-							<a href="https://plus.google.com/u/0/communities/103183769032333474646">
-								Google+
-							</a>
-						</li>
-					</ul>
-				</div>
-	
-				<div class="col-lg-3 col-sm-6 footer-links">
-					<h6>Learn</h6>
-					<ul>
-						<li>
-							<a href="https://www.freecadweb.org/wiki/Tutorials">
-								Tutorials
-							</a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/results?search_query=freecad">
-								Youtube Videos
-							</a>
-						</li>
-						<li>
-							<a href="https://stackexchange.com/search?q=freecad">
-								Stack Exchange
-							</a>
-						</li>
-					</ul>
-				</div>
-	
-				<div class="col-lg-3 col-sm-6 footer-links">
-					<h6>Contribute</h6>
-					<ul>
-						<li>
-							<a href="https://www.freecadweb.org/wiki/Help_FreeCAD">
-								How can I help?
-							</a>
-						</li>
-						<li>
-							<a href="https://www.freecadweb.org/wiki/Donate">
-								Donate
-							</a>
-						</li>
-						<li>
-							<a href="https://crowdin.com/project/freecad">
-								Translate
-							</a>
-						</li>
-					</ul>
-				</div>
-	
-				<div class="col-lg-3 col-sm-6 footer-links">
-					<h6>Code</h6>
-					<ul>
-						<li>
-							<a href="https://www.freecadweb.org/wiki/Compiling">
-								Building from source
-							</a>
-						</li>
-						<li>
-							<a href="https://www.freecadweb.org/api/">
-								C++ & Python API
-							</a>
-						</li>
-						<li>
-							<a href="https://www.freecadweb.org/wiki/Licence">
-								License information
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-	
-			<span>
-				© The FreeCAD Team. Homepage Image Credits (Top to bottom): ppemawm, r-frank, 
-				epileftric, regis, rider_mortagnais, bejant. Homepage design by AR795.
-			</span>
-		</footer>
+	<footer class="container-fluid footer-custom bg-dark text-center text-light">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h4>Learn</h4>
+        <ul class="list-unstyled">
+          <li><a class="text-light" href="https://www.freecadweb.org/wiki/Tutorials">Tutorials</a></li>
+          <li><a class="text-light" href="https://www.youtube.com/results?search_query=freecad">Youtube Videos</a></li>
+          <li><a class="text-light" href="https://stackexchange.com/search?q=freecad">Stack Exchange</a></li>
+        </ul>
+      </div>
 
-	<!-- Include Bootstrap JS files -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper-1.14.3.min.js"></script>
-	<script src="js/bootstrap-4.1.2.min.js"></script>
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h4>Contribute</h4>
+        <ul class="list-unstyled">
+          <li><a class="text-light" href="https://www.freecadweb.org/wiki/Help_FreeCAD">How can I help?</a></li>
+          <li><a class="text-light" href="https://www.freecadweb.org/wiki/Donate">Donate</a></li>
+          <li><a class="text-light" href="https://crowdin.com/project/freecad">Translate</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-3">
+        <h4>Code</h4>
+        <ul class="list-unstyled">
+          <li><a class="text-light" href="https://www.freecadweb.org/wiki/Compiling">Building from source</a></li>
+          <li><a class="text-light" href="https://www.freecadweb.org/api/">C++ & Python API</a></li>
+          <li><a class="text-light" href="https://www.freecadweb.org/wiki/Licence">License information</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="justify-content-center my-3 my-md-5">
+      <a href="https://forum.freecadweb.org/"><img class="icon-social m-2" src="svg/icon-forum-light.svg" alt="Forum"/></a>
+      <a href="https://github.com/FreeCAD/FreeCAD"><img class="icon-social m-2" src="svg/icon-github-light.svg" alt="GitHub"/></a>
+      <a href="https://fosstodon.org/@FreeCAD"><img class="icon-social m-2" src="svg/icon-mastodon-light.svg" alt="Mastodon"/></a>
+      <a href="https://riot.im/app/#/room/#gitter_FreeCAD=2FFreeCAD:matrix.org"><img class="icon-social m-2" src="svg/icon-matrix-light.svg" alt="Matrix"/></a>
+      <a href="irc://chat.freenode.net/freecad"><img class="icon-social m-2" src="svg/icon-irc-light.svg" alt="IRC" /></a>
+      <a href="https://gitter.im/FreeCAD/FreeCAD"><img class="icon-social m-2" src="svg/icon-gitter-light.svg" alt="Gitter.im"/></a>
+      <a href="https://www.reddit.com/r/freecad"><img class="icon-social m-2" src="svg/icon-reddit-light.svg" alt="Reddit"/></a>
+      <a href="https://twitter.com/FreeCADNews"><img class="icon-social m-2" src="svg/icon-twitter-light.svg" alt="Twitter"/></a>
+      <a href="https://www.facebook.com/FreeCAD"><img class="icon-social m-2" src="svg/icon-facebook-light.svg" alt="Facebook"/></a>
+    </div>
+
+    <p class="footer-credits mt-3">
+      © The FreeCAD Team. Homepage image credits (top to bottom): ppemawm,
+      r-frank, epileftric, regis, rider_mortagnais, bejant.
+    </p>
+  </footer>
+
+  <!-- Include Bootstrap JS files -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper-1.14.7.min.js"></script>
+  <script src="js/bootstrap-4.3.1.min.js"></script>
 </body>
 </html>
