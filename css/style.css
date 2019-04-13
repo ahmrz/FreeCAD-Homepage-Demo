@@ -143,14 +143,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .download-platform-name {
-  font-size: 1.2em;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+  font-size: 1.4em;
+  /* margin-top: 0.4em;
+  margin-bottom: 0.4em; */
 }
 
 .download-notes {
   margin-top: 3em;
   margin-bottom: 4em;
+}
+
+.card-columns {
+  column-count: 1;
 }
 
 @media (min-width: 400px) {
@@ -192,6 +196,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .btn {
     font-size: 0.8em;
+  }
+
+  .card-columns {
+    column-count: 2;
   }
 }
 
