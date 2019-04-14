@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 1em;
-  padding: 0.4em 2em 0.4em 2em;
+  padding: 0.4em 1.6em 0.4em 1.6em;
 }
 
 #main .section-cover {
@@ -139,22 +139,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  border-radius: 0.6em;
+  border-radius: 0.8em;
 }
 
 .download-platform-name {
   font-size: 1.4em;
-  /* margin-top: 0.4em;
-  margin-bottom: 0.4em; */
 }
 
 .download-notes {
   margin-top: 3em;
   margin-bottom: 4em;
-}
-
-.card-columns {
-  column-count: 1;
 }
 
 @media (min-width: 400px) {
@@ -198,9 +192,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8em;
   }
 
-  .card-columns {
-    column-count: 2;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -229,9 +220,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1800px) {
   body {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .home-title {
@@ -242,19 +233,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4em;
   }
   
-  .btn {
+  /* .btn {
     font-size: 1em;
-  }
+  } */
 
   #floating-arrow {
     width: 2em;
     margin: 4em 0 4em 0;
   }
+
+  .download-platform {
+    max-width: 70vw;
+  }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2400px) {
   body {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   #main .section-cover {
@@ -263,5 +258,40 @@ h1, h2, h3, h4, h5, h6 {
 
   #main .section {
     margin: 10em 0 10em 0;
+  }
+
+  .download-platform {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 3500px) {
+  body {
+    font-size: 40px;
+  }
+
+  .home-title {
+    font-size: 6em;
+  }
+  
+  .home-subtitle {
+    font-size: 1.8em;
+  }
+
+  #main .section-cover {
+    margin-top: 8em;
+  }
+
+  #main .section {
+    margin: 12em 0 12em 0;
+  }
+
+  #floating-arrow {
+    width: 4em;
+    margin: 6em 0 6em 0;
+  }
+
+  .download-platform {
+    max-width: 50vw;
   }
 }
