@@ -63,22 +63,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #404040;
 }
 
-.navbar .dropdown-menu {
-  overflow: auto;
-  font-size: 1em;
-}
-
 .navbar .dropdown-lang {
   height: 60vh;
 }
 
-/* .navbar .dropdown-community a img {
-  width: 2em;
-} */
+.dropdown-menu {
+  overflow: auto;
+  font-size: 1em;
+}
 
-.navbar .dropdown-menu a:hover,
-.navbar .dropdown-menu a.active {
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
   background-color: #e4e4e4;
+}
+
+.dropdown-header {
+  font-size: 1em;
 }
 
 .home-title {
@@ -184,14 +184,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.6em;
   }
 
-  .navbar .dropdown-menu {
+  .dropdown-menu {
     font-size: 0.8em;
   }
 
   .btn {
     font-size: 0.8em;
   }
-
 }
 
 @media (min-width: 1200px) {

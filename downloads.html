@@ -127,20 +127,44 @@
         <div class="card text-dark">
           <div class="card-body d-block align-items-center text-center px-xl-5 py-xl-4">
             <img class="w-100 p-4" src="svg/icon-windows.svg" alt="Windows">
+
             <h3 class="card-title download-platform-name m-0 pb-3">Windows</h3>
-            <div class="flex-column flex-lg-row">
-              <a class="btn btn-primary rounded-pill my-1" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x32-installer.exe">32-Bit</a>
-              <a class="btn btn-primary rounded-pill my-1" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x64-installer.exe">64-Bit</a>
-            </div>
+
+            <div class="dropdown">
+              <a class="btn btn-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuWindows" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select
+              </a>
             
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuWindows">
+                <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x32-installer.exe">
+                  Installer (32-Bit)
+                </a>
+
+                <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x64-installer.exe">
+                  Installer (64-Bit)
+                </a>
+              </div>
+            </div>
+
             <div class="dropdown mt-1">
-              <a class="btn btn-outline-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="checksumWin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="btn btn-outline-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="checksumWindows" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Checksum
               </a>
               
-              <div class="dropdown-menu" aria-labelledby="checksumWin">
-                <a class="dropdown-item" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x32-installer.exe-SHA256.txt">32-Bit</a>
-                <a class="dropdown-item" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD-0.18.16131.3129ae4-WIN-x64-installer.exe-SHA256.txt">64-Bit</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="checksumWindows">
+                <h6 class="dropdown-header">Installer (32-Bit)</h6>
+
+                <code class="dropdown-item-text text-muted text-wrap">
+                  ef 5d 41 08 32 9c 71 b4 b5 b6 0f be 2f bc 49 ac ef 86 69 49 42 e8 37 65 a4 86 30 10 ea be 0d 79
+                </code>
+
+                <div class="dropdown-divider"></div>
+
+                <h6 class="dropdown-header">Installer (64-Bit)</h6>
+
+                <code class="dropdown-item-text text-muted text-wrap">
+                  c5 21 b8 ca 5d d9 ed 28 7b c3 af be 57 aa 39 f4 de a4 ca 89 e1 3f b5 8c 32 58 d3 79 2f 86 d4 8f
+                </code>
               </div>
             </div>
           </div>
@@ -157,18 +181,32 @@
         <div class="card text-dark">
           <div class="card-body d-block align-items-center text-center px-xl-5 py-xl-4">
             <img class="w-100 p-4" src="svg/icon-apple.svg" alt="Mac">
+
             <h3 class="card-title download-platform-name m-0 pb-3">Mac</h3>
-            <a class="btn btn-primary rounded-pill my-1" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-OSX-x86_64-conda-Qt5-Py3.dmg">
-              64-Bit
-            </a>
+
+            <div class="dropdown">
+              <a class="btn btn-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuMac" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select
+              </a>
+            
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuMac">
+                <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-OSX-x86_64-conda-Qt5-Py3.dmg">
+                  Installer (64-Bit)
+                </a>
+              </div>
+            </div>
 
             <div class="dropdown mt-1">
               <a class="btn btn-outline-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="checksumMac" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Checksum
               </a>
               
-              <div class="dropdown-menu" aria-labelledby="checksumMac">
-                <a class="dropdown-item" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-OSX-x86_64-conda-Qt5-Py3.dmg-SHA256.txt">64-Bit</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="checksumMac">
+                <h6 class="dropdown-header">Installer (64-Bit)</h6>
+
+                <code class="dropdown-item-text text-muted text-wrap">
+                  bd 04 53 59 ea a0 68 4e c6 44 46 0f dc 86 88 5f 4c 18 74 c2 3d 18 0d e9 df f5 d2 77 ed 1f 27 f3
+                </code>
               </div>
             </div>
           </div>
@@ -185,18 +223,40 @@
         <div class="card text-dark">
           <div class="card-body d-block align-items-center text-center px-xl-5 py-xl-4">
             <img class="w-100 p-4" src="svg/icon-linux.svg" alt="Linux">
+
             <h3 class="card-title download-platform-name m-0 pb-3">Linux</h3>
-            <a class="btn btn-primary rounded-pill my-1" role="button" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage">
-              64-Bit AppImage
-            </a>
+
+            <div class="dropdown">
+              <a class="btn btn-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLinux" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select
+              </a>
+            
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinux">
+                <a class="dropdown-item text-dark" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage">
+                  AppImage (64-Bit)
+                </a>
+
+                <a class="dropdown-item text-dark" href="https://flathub.org/apps/details/org.freecadweb.FreeCAD">
+                  Flatpak
+                </a>
+
+                <a class="dropdown-item text-dark" href="https://snapcraft.io/freecad">
+                  Snap
+                </a>
+              </div>
+            </div>
 
             <div class="dropdown mt-1">
               <a class="btn btn-outline-primary rounded-pill my-1 dropdown-toggle" href="#" role="button" id="checksumLinux" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Checksum
               </a>
               
-              <div class="dropdown-menu" aria-labelledby="checksumLinux">
-                <a class="dropdown-item" href="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.3/FreeCAD_0.18-16131-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage-SHA256.txt">64-Bit AppImage</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="checksumLinux">
+                <h6 class="dropdown-header">AppImage (64-Bit)</h6>
+
+                <code class="dropdown-item-text text-muted text-wrap">
+                  fb 65 33 2a f1 f7 1c 88 2a e2 c9 c2 19 8e 31 16 ee 25 b7 2a 63 5e a5 38 88 91 43 e9 d4 58 5e 67
+                </code>
               </div>
             </div>
           </div>
